@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abhishek Singh - Web Developer</title>
+
+    <link rel="icon" type="image/x-icon" href="Images/Favicon/icon.png">
+
+    <!-- ---------------------------- Bootstrap CSS ---------------------------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <!-- ------------------------------ Main CSS ------------------------------- -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css">
+
+    <!-- ---------------------------- Font Awesome ----------------------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                 Navbar                                  -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <nav id="navbar-exxample2" class="navbar navbar-light navbar-expand-lg color-light" >
+        <div class="container-fluid">
+
+            <!-- Brand Logo -->
+            <a class="navbar-brand d-flex justify-content-around" href="index.html">
+                <span class="brand-logo text-center position-relative">
+                    <img src="Images/brand-logo-2.png" alt="Abhishek" class="position-absolute">
+                </span>
+                <span class="ms-2" style="line-height: 82px; font-weight: bold; font-size: large;"> Abhishek</span>
+            </a>
+
+            <!-- Icon Offcanvas -->
+            <button class="navbar-toggler button" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Offcanvas -->
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+
+                <div class="offcanvas-header">
+
+                    <a class="navbar-brand d-flex justify-content-around" href="index.html">
+                        <span class="brand-logo text-center position-relative">
+                            <img src="Images/brand-logo-2.png" alt="Abhishek" class="position-absolute">
+                        </span>
+                        <span class="ms-2" style="line-height: 82px; font-weight: bold; font-size: large;">
+                            Abhishek</span>
+                    </a>
+
+                    <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Abhishek</h5> -->
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <!-- ----------------------------------------------------------------------- -->
+                <div class="offcanvas-body" >
+                    <ul id="nav-list" class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact Me</a>
+                        </li>
+                    </ul>
+
+                    <!-- Resume Button -->
+                    <a href="Abhishek Kirola CV.pdf" target="_blank" class="white-button mt-lg-0 mt-5">Resume</a>
+
+                    <!-- ---------------------------- Social Icons ----------------------------- -->
+                    <div class="d-lg-none d-block">
+                        <div class="social-icons-text">FIND WITH ME</div>
+                        <div class="social-icons">
+                            <ul class="d-flex justify-content-evenly" style="padding: 0 12px;">
+                                <!-- Facebook -->
+                                <li>
+                                    <a href="#" class="button text-center"
+                                        style="width: 53px; height: 53px; display: block; line-height: 53px;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-facebook">
+                                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <!-- Instagram -->
+                                <li>
+                                    <a href="#" class="button text-center"
+                                        style="width: 53px; height: 53px; display: block; line-height: 53px;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-instagram">
+                                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <!-- Linkedin -->
+                                <li>
+                                    <a href="#" class="button text-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"
+                                            class="feather feather-linkedin">
+                                            <path
+                                                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                            </path>
+                                            <rect x="2" y="9" width="4" height="12"></rect>
+                                            <circle cx="4" cy="4" r="2"></circle>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- ----------------------------------------------------------------------- -->
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                            Navbar Ends Here                             -->
+    <!-- ----------------------------------------------------------------------- -->
+
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                              Hero Section                               -->
+    <!-- ----------------------------------------------------------------------- -->
+    <div id="hero" class="container-fluid">
+        <div id="container" class="container-lg m-lg-auto border-bottom border-2">
+            <div class="row flex-lg-row flex-column-reverse  ">
+
+                <!-- About hero section -->
+                <div class="col-lg-6 ptop-81">
+
+                    <div class="hero-data w-100">
+
+                        <div class="welcome text-uppercase text-break">welcome to my world</div>
+
+                        <div class="name text-dark text-break">
+                            <span class="text-break">Hi,I'm</span>
+                            <span class="myname text-break">Abhishek</span>
+                            <div class="wrapper">
+                                <div class="static-txt">a</div>
+                                <ul class="dynamic-txts">
+                                    <li><span>Developer.</span></li>
+                                    <li><span>Programmer.</span></li>
+                                    <li><span>Coder.</span></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="hero-data-text">Hi I am Abhishek Singh Kirola & I am a Full Stack Developer Who
+                            writes Clean, Elegant And efficient code.</div>
+                        <!-- <div class="hero-data-text">Fornt End Developer Who writes Clean, Elegant And efficient code.</div> -->
+                        <!-- <div class="hero-data-text">I am a Fornt End Developer based in Delhi Who writes Clean, Elegant And efficient code.</div> -->
+
+                        <div class="icons">
+                            <div id="flex-icon" class="d-md-flex justify-content-between d-block">
+                                <!--Hero Social Icons -->
+                                <div class="mtop-103">
+                                    <div class="social-icons-text text-dark ml-24">FIND WITH ME</div>
+                                    <div class="social-icons-black">
+                                        <ul class="d-flex justify-content-between flex-wrap">
+                                            <!-- Facebook -->
+                                            <li>
+                                                <a href="#" class="button text-center">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="feather feather-facebook">
+                                                        <path
+                                                            d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z">
+                                                        </path>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <!-- Instagram -->
+                                            <li>
+                                                <a href="#" class="button text-center">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="feather feather-instagram">
+                                                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z">
+                                                        </path>
+                                                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <!-- Linkedin -->
+                                            <li>
+                                                <a href="#" class="button text-center">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="feather feather-linkedin">
+                                                        <path
+                                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                                        </path>
+                                                        <rect x="2" y="9" width="4" height="12"></rect>
+                                                        <circle cx="4" cy="4" r="2"></circle>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- Hero Skill Icons -->
+                                <div class="mtop-103">
+
+                                    <div class="social-icons-text text-dark ml-24"> BEST SKILLS ON</div>
+                                    <div class="hero-skill-icons">
+                                        <ul class="d-flex justify-content-between flex-wrap">
+                                            <!-- Html Icon -->
+                                            <li>
+                                                <a href="#" class="button text-center">
+                                                    <i class="fa-brands fa-html5  text-danger"></i>
+                                                </a>
+                                            </li>
+                                            <!-- CSS Icon -->
+                                            <li>
+                                                <a href="#" class="button text-center">
+                                                    <i class="fa-brands fa-css3  text-primary"></i>
+                                                </a>
+                                            </li>
+                                            <!-- Javascript Icon -->
+                                            <li>
+                                                <a href="#" class="button text-center">
+                                                    <i class="fa-brands fa-js-square text-yellow"></i>
+                                                </a>
+                                            </li>
+                                            <!-- php Icon  -->
+                                            <!-- <li>
+                                                <a href="#" class="button text-center">
+                                                    <i class="fa-brands fa-php  text-dark"></i>
+                                                </a>
+                                            </li> -->
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- ----------------------------------------------------------------------- -->
+
+                <!-- Hero Image Section -->
+                <div class="col-lg-6 pl-110">
+                    <div id="hero-image" class="container-fluid">
+                        <div class="wrap-image  position-relative m-auto ">
+                            <img src="Images/hero-3.png" alt="" class="d-block m-auto h-100 img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <!-- ----------------------------------------------------------------------- -->
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                             Hero Ends Here                              -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- -------------------------- Scroll Top Button -------------------------- -->
+    <button type="button" onclick="topFunction()" id="mybtn" title="Go to top"
+        class="rounded-circle text-center position-fixed ">
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="feather feather-arrow-up">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"> </polyline>
+        </svg>
+
+    </button> 
+    <!-- ----------------------------------------------------------------------- -->
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                             About Me Starts                             -->
+    <!-- ----------------------------------------------------------------------- -->
+   <div id="about" class="container-lg m-auto border-bottom border-2 pb--85 pt--85">
+        <div class="row"> 
+
+            <div class="col-lg-5 col-12 align-self-center">
+                <div class="image-area">
+                    <div class="thumbnail text-center">
+                        <div class="img">
+                            <img src="Images/abhi-6.png" alt="My Image" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-7 col-12 pl-48">
+
+                <div class="container-fluid pt-10">
+                
+                    <h3 class="visit texxt-break">VISIT MY PORTFOLIO & HIRE ME</h3>
+                
+                    <h1 class="about text-break pt-1">About Me</h1>
+                
+                    <p class="about-text text-break pt-3">
+                        I’m a Full stack Developer located in India. Knowledge of multiple front-end languages and libraries (e.g. HTML/
+                        CSS, JavaScript, Bootstrap, jQuery) & ability to develop front end website architecture and back end website applications.
+                    </p>
+                
+                    <p id="para-2" class="about-text text-break show1">
+                        Well-organised person, problem solver, independent employee with high attention to detail. Love to Playing
+                        Android &
+                        Pc games, Chess, watching movies & series.
+                    </p>
+                    <p id="para-3" class="about-text text-break show1">
+                        Interested in the entire frontend & backend spectrum and working on ambitious projects with positive people.
+                    </p>
+                
+                    <a type="button" id="read-more" class="d-none">
+                        Read more
+                        <i class="fa-solid fa-angles-down"></i>
+                    </a>
+                
+                    <div class="visit texxt-break text-uppercase pt-5 mb-3" style="font-size: 14px; color: #ba55d3;">
+                        Lets Make something Special
+                    </div>
+                
+                    <a href="#contact" class="button d-inline-block contact-button">Get In Touch </a>
+                </div>
+
+            </div>
+
+         </div>
+    </div> 
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                           About Me Ends Here                            -->
+    <!-- ----------------------------------------------------------------------- -->
+ 
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                             Services Starts                             -->
+    <!-- ----------------------------------------------------------------------- -->
+    <div id="services" class="container m-auto border-bottom border-2 pb--85 pt--85">
+        <h5 class="text-uppercase text-pink">features</h5>
+        <div class="what mb-5">
+            What I Do
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-12 mb-5">
+                <div class="service-box">
+                    <div class="inner-service-box">
+
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000"
+                                preserveAspectRatio="xMidYMid meet">
+                                <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#ff014f" stroke="none">
+                                    <path
+                                        d="M4050 5098 c-27 -7 -147 -121 -540 -514 l-505 -504 -1167 0 -1167 0 -3 386 -3 386 -24 19 c-47 38 -191 18 -320 -44 -93 -45 -206 -159 -254 -254 -72 -146 -68 -30 -65 -1878 l3 -1660 24 -70 c47 -140 160 -272 285 -334 129 -63 74 -61 1371 -61 l1180 0 -222 -222 c-246 -246 -258 -264 -210 -312 l26 -26 1306 0 1306 0 24 25 25 24 0 1301 c0 814 -4 1308 -10 1319 -5 10 -22 24 -39 30 -42 18 -67 1 -191 -123 l-105 -106 -5 775 -5 774 -23 23 c-22 23 -26 23 -324 26 l-302 3 222 222 c143 144 227 235 237 259 21 52 19 133 -5 183 -12 25 -82 102 -173 192 -120 118 -161 153 -192 162 -48 13 -107 13 -155 -1z m252 -276 c175 -175 174 -169 53 -291 l-85 -86 -172 173 -173 172 86 85 c122 121 116 122 291 -53z m-3782 -1237 c0 -1132 0 -1145 20 -1165 38 -38 100 -22 119 31 8 22 11 252 11 750 l0 719 1087 0 1087 0 -217 -218 c-119 -120 -217 -225 -217 -235 0 -54 54 -97 101 -78 13 5 258 244 544 530 l520 521 172 -172 173 -173 -777 -777 -778 -778 -172 172 -173 173 160 160 c174 176 184 192 135 240 -49 50 -62 42 -273 -168 l-194 -194 -127 -359 -127 -359 -143 -5 c-135 -5 -144 -6 -162 -29 -25 -31 -24 -69 3 -98 l21 -23 1069 0 1069 0 24 25 c30 29 32 64 6 96 l-19 24 -758 5 -757 5 224 78 224 79 780 779 780 779 333 0 332 0 0 -797 0 -798 -550 -550 c-475 -475 -550 -554 -550 -580 0 -39 35 -75 74 -75 28 0 105 74 703 672 l673 673 0 -332 0 -331 -84 -3 c-98 -5 -126 -21 -126 -76 0 -58 26 -73 125 -73 l85 0 0 -115 0 -115 -82 0 c-96 0 -128 -19 -128 -76 0 -54 36 -74 131 -74 l79 0 0 -115 0 -115 -85 0 c-99 0 -125 -15 -125 -73 0 -55 28 -71 126 -76 l84 -3 0 -108 0 -108 -84 -3 c-98 -5 -126 -21 -126 -76 0 -58 26 -73 125 -73 l85 0 0 -180 0 -180 -1152 0 -1153 0 393 393 c223 223 392 400 392 410 0 22 -18 59 -34 69 -6 4 -26 8 -45 8 -31 0 -50 -15 -196 -160 l-161 -160 -1245 0 c-1340 0 -1298 -2 -1401 51 -59 30 -140 115 -171 179 -73 149 -51 311 59 446 66 82 210 154 308 154 33 0 52 6 73 24 l28 24 0 301 c0 296 0 301 -22 322 -27 27 -75 29 -103 4 -19 -17 -20 -30 -20 -271 l0 -253 -42 -11 c-122 -32 -192 -66 -276 -137 l-52 -45 0 1409 c0 974 3 1428 11 1468 20 108 89 217 176 277 52 35 127 67 161 68 l22 0 0 -1145z m3475 925 l170 -170 -70 -70 -70 -70 -172 172 -173 173 67 67 c37 38 70 68 73 68 3 0 82 -76 175 -170z m-1788 -2052 c-7 -4 -54 -22 -106 -39 l-93 -31 -71 70 -70 70 38 107 38 107 138 -138 c94 -94 134 -141 126 -146z">
+                                    </path>
+                                    <path
+                                        d="M4038 1082 c-408 -408 -428 -429 -428 -464 0 -28 6 -42 26 -57 26 -21 37 -21 450 -21 301 0 430 3 449 12 16 7 29 24 36 47 6 23 9 183 7 454 l-3 419 -24 19 c-13 10 -37 19 -54 19 -28 0 -78 -47 -459 -428z m392 -112 l0 -280 -282 0 -283 0 280 280 c154 154 281 280 282 280 2 0 3 -126 3 -280z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </div>
+
+                        <div class="service-desc mt-4">
+                            <h3 class="text-break mb-4 fw-bold">Web Designing</h3>
+                            <p class="text-break">
+                                Staying competitive and innovative is fundamental to us. Spending more effort on design implies spending less time
+                                coding. 
+                                <!-- We are extremely focused in our work and have a thorough understanding of web design, as well as a passion for
+                                all things creative, which helps us to accomplish more. -->
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-12">
+                <div class="service-box">
+                    <div class="inner-service-box">
+
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000"
+                                preserveAspectRatio="xMidYMid meet">
+                                <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#ff014f" stroke="none">
+                                    <path
+                                        d="M105 5015 l-25 -24 0 -271 0 -271 25 -24 24 -25 271 0 271 0 24 25 c23 22 25 32 25 120 l0 95 478 -1 c357 0 471 -3 452 -11 -279 -124 -485 -261 -665 -444 -250 -253 -396 -564 -422 -900 l-6 -84 -54 0 c-44 0 -58 -5 -78 -25 -25 -24 -25 -26 -25 -215 0 -257 -17 -240 240 -240 257 0 240 -17 240 240 0 189 0 191 -25 215 -20 21 -34 25 -80 25 l-55 0 0 38 c0 72 30 234 60 322 167 501 686 910 1305 1029 61 12 120 24 133 27 21 4 22 2 22 -81 0 -78 2 -88 25 -110 l24 -25 271 0 271 0 24 25 c23 22 25 32 25 110 0 83 1 85 23 81 12 -3 72 -15 132 -26 473 -93 914 -368 1147 -714 131 -197 196 -375 214 -594 l7 -82 -57 0 c-47 0 -61 -4 -81 -25 -25 -24 -25 -26 -25 -215 0 -257 -17 -240 240 -240 257 0 240 -17 240 240 0 189 0 191 -25 215 -20 20 -34 25 -78 25 l-54 0 -7 84 c-35 467 -300 876 -756 1171 -61 40 -232 129 -330 173 -19 8 95 11 453 11 l477 1 0 -95 c0 -88 2 -98 25 -120 l24 -25 271 0 271 0 24 25 25 24 0 271 0 271 -25 24 -24 25 -271 0 -271 0 -24 -25 c-23 -22 -25 -32 -25 -120 l0 -95 -760 0 -760 0 0 95 c0 88 -2 98 -25 120 l-24 25 -271 0 -271 0 -24 -25 c-23 -22 -25 -32 -25 -120 l0 -95 -760 0 -760 0 0 95 c0 88 -2 98 -25 120 l-24 25 -271 0 -271 0 -24 -25z m455 -295 l0 -160 -160 0 -160 0 0 160 0 160 160 0 160 0 0 -160z m2160 0 l0 -160 -160 0 -160 0 0 160 0 160 160 0 160 0 0 -160z m2160 0 l0 -160 -160 0 -160 0 0 160 0 160 160 0 160 0 0 -160z m-4160 -1760 l0 -80 -80 0 -80 0 0 80 0 80 80 0 80 0 0 -80z m3840 0 l0 -80 -80 0 -80 0 0 80 0 80 80 0 80 0 0 -80z">
+                                    </path>
+                                    <path
+                                        d="M2512 4223 c-31 -27 -1145 -1785 -1149 -1813 -2 -14 92 -312 221 -697 l224 -673 -79 0 c-71 0 -83 -3 -104 -25 -25 -24 -25 -26 -25 -215 0 -189 0 -191 25 -215 20 -21 34 -25 80 -25 l55 0 0 -215 c0 -216 0 -216 25 -240 l24 -25 751 0 751 0 24 25 c25 24 25 24 25 240 l0 215 55 0 c46 0 60 4 80 25 25 24 25 26 25 215 0 189 0 191 -25 215 -21 22 -33 25 -104 25 l-79 0 224 673 c129 385 223 683 221 697 -4 28 -1118 1786 -1149 1813 -11 9 -33 17 -48 17 -15 0 -37 -8 -48 -17z m-32 -1085 l0 -743 -68 -36 c-233 -123 -227 -441 10 -566 46 -24 64 -28 138 -28 77 1 91 4 148 34 70 38 101 70 140 145 22 43 26 64 27 136 0 78 -3 90 -34 148 -38 71 -82 112 -153 144 l-48 22 0 744 c0 410 2 743 4 741 2 -2 216 -338 475 -747 l473 -742 -225 -673 -224 -672 -583 0 -583 0 -224 672 -225 673 474 745 c260 409 474 745 476 745 1 0 2 -334 2 -742z m143 -912 c104 -43 128 -175 47 -256 -66 -66 -156 -67 -221 -1 -124 123 13 325 174 257z m737 -1426 l0 -80 -800 0 -800 0 0 80 0 80 800 0 800 0 0 -80z m-160 -400 l0 -160 -640 0 -640 0 0 160 0 160 640 0 640 0 0 -160z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </div>
+
+                        <div class="service-desc mt-4">
+                            <h3 class="text-break mb-4 fw-bold">Web Development</h3>
+                            <p class="text-break">
+                                We use all of the individual visual components from the preliminary design to build the working website. 
+                                <!-- This covers not
+                                only the desktop view, but also mobile responsive versions, ensuring that your site is available to the widest potential
+                                audience. -->
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                              services Ends                              -->
+    <!-- ----------------------------------------------------------------------- -->
+
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                           Skills Starts Here                            -->
+    <!-- ----------------------------------------------------------------------- -->
+     <div id="skills" class="container mx-auto border-bottom border-2 mt-5 pt--85 pb--85">
+        <div class="text-center text-red text-break text-uppercase">visit my Skills and hire me</div>
+        <h1 class="text-center fw-bold text-break pt-4" style="color: #3c3e41;">My Skills</h1>
+
+        <ul class="d-flex flex-wrap justify-content-evenly skill-style">
+            <li class="d-flex justify-content-center align-items-center mt-5">
+                <img src="Images/Skills/html-2.png" alt="">
+            </li>
+            <li class="d-flex justify-content-center align-items-center mt-5">
+                <img src="Images/Skills/css.png" alt="">
+            </li>
+            <li class="d-flex justify-content-center align-items-center mt-5">
+                <img src="Images/Skills/javascript-2.png" alt="">
+            </li>
+            <li class="d-flex justify-content-center align-items-center mt-5">
+                <img src="Images/Skills/bootstrap.png" alt="" >
+            </li>
+            <li class="d-flex justify-content-center align-items-center mt-5">
+                <img src="Images/Skills/jquery-2.png" alt="" >
+            </li>
+            <li class="d-flex justify-content-center align-items-center mt-5">
+                <img src="Images/Skills/ps.png" alt="" >
+            </li>
+        </ul>
+    </div> 
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                            Skills Ends Here                             -->
+    <!-- ----------------------------------------------------------------------- -->
+
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                          Projects Starts Here                          -->
+    <!-- ----------------------------------------------------------------------- -->
+    <div id="projects" class="container-lg  m-auto border-bottom border-2 mt-5 pt--85 pb--85 ">
+        <div class="text-center text-red text-break text-uppercase">visit my portfolio and keep your feedback</div>
+        <h1 class="text-center fw-bold text-break mt-4" style="color: #3c3e41;">My Projects</h1>
+
+        <div class="wrap-projects d-lg-flex flex-wrap justify-content-between">
+
+            <div class="project mt-5">
+
+                <div class="project-thumbnail"> 
+                    <button type="button"><img src="Images/Projects/portfolio-01.jpg" alt="Project1" class="w-100 h-100 img-fluid" data-bs-toggle="modal" data-bs-target="#projectModal"></button>
+                </div>
+
+                <div class="project-title">
+
+                    <div class="d-flex justify-content-between mt-3 mb-3 ">
+                        <div class="text-pink text-break">Development</div>
+                        <div class="like">
+                            <i class="fa-solid fa-heart fa-border-all"></i>
+                            <span>10</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#projectModal">
+                        <h3 class="text-break fs-23 fw-bold text-dark">
+                            The Service Provide For Design
+                            <span>
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </span>
+                        </h3>
+                        
+                    </a>
+
+                </div>
+            </div>  
+
+            <!-- Modal -->
+              <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header border-0">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+
+                          <div class="col-lg-6 col-12">
+                            <div class="portfolio-popup-thumbnail">
+                                <div class="image">
+                                    <img class="w-100 img-fluid" src="Images/Projects/portfolio-01.jpg" alt="slide">
+                                </div>
+                            </div>
+                          </div>
+
+                          <div class="col-lg-6 col-12">
+                            <div class="project-text-content">
+                                <h3>
+                                    <span>Featured - Design</span> App Design Development.
+                                </h3>
+                                <p class="mb--30">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate distinctio assumenda explicabo veniam temporibus eligendi.</p>
+                                <p>Consectetur adipisicing elit. Cupiditate distinctio assumenda. dolorum alias suscipit rerum maiores aliquam earum odit, nihil culpa quas iusto hic minus!</p>
+                                <div class="button-group mt--20">
+                                    <a href="#" class="rn-btn thumbs-icon text-center">
+                                        <span>LIKE THIS</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" 
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-up">
+                                            <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="rn-btn rn-btn-secondary text-center">
+                                        <span>VIEW PROJECT</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg>
+                                    </a>
+                                </div>
+
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+             
+                  </div>
+                </div>
+            </div>
+
+            <div class="project mt-5">
+
+                <div class="project-thumbnail"> 
+                    <button type="button"><img src="Images/Projects/portfolio-01.jpg" alt="Project1" class="w-100 h-100 img-fluid" data-bs-toggle="modal" data-bs-target="#projectModal"></button>
+                </div>
+
+                <div class="project-title">
+
+                    <div class="d-flex justify-content-between mt-3 mb-3 ">
+                        <div class="text-pink text-break">Development</div>
+                        <div class="like">
+                            <i class="fa-solid fa-heart fa-border-all"></i>
+                            <span>10</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#projectModal">
+                        <h3 class="text-break fs-23 fw-bold text-dark">
+                            The Service Provide For Design
+                            <span>
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </span>
+                        </h3>
+                        
+                    </a>
+
+                </div>
+            </div>  
+
+            <!-- Modal -->
+            <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header border-0">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+
+                          <div class="col-lg-6">
+                            <div class="portfolio-popup-thumbnail">
+                                <div class="image">
+                                    <img class="w-100 img-fluid" src="Images/Projects/portfolio-01.jpg" alt="slide">
+                                </div>
+                            </div>
+                          </div>
+
+                          <div class="col-lg-6">
+                            <div class="project-text-content">
+                                <h3>
+                                    <span>Featured - Design</span> App Design Development.
+                                </h3>
+                                <p class="mb--30">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate distinctio assumenda explicabo veniam temporibus eligendi.</p>
+                                <p>Consectetur adipisicing elit. Cupiditate distinctio assumenda. dolorum alias suscipit rerum maiores aliquam earum odit, nihil culpa quas iusto hic minus!</p>
+                                <div class="button-group mt--20">
+                                    <a href="#" class="rn-btn thumbs-icon">
+                                        <span>LIKE THIS</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" 
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-up">
+                                            <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="rn-btn rn-btn-secondary">
+                                        <span>VIEW PROJECT</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg>
+                                    </a>
+                                </div>
+
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+             
+                  </div>
+                </div>
+            </div> 
+ 
+            <div class="project mt-5">
+
+                <div class="project-thumbnail"> 
+                    <button type="button"><img src="Images/Projects/portfolio-01.jpg" alt="Project1" class="w-100 h-100 img-fluid" data-bs-toggle="modal" data-bs-target="#projectModal"></button>
+                </div>
+
+                <div class="project-title">
+
+                    <div class="d-flex justify-content-between mt-3 mb-3 ">
+                        <div class="text-pink text-break">Development</div>
+                        <div class="like">
+                            <i class="fa-solid fa-heart fa-border-all"></i>
+                            <span>10</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#projectModal">
+                        <h3 class="text-break fs-23 fw-bold text-dark">
+                            The Service Provide For Design
+                            <span>
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </span>
+                        </h3>
+                        
+                    </a>
+
+                </div>
+            </div> 
+            <!-- Modal -->
+              <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header border-0">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+
+                          <div class="col-lg-6">
+                            <div class="portfolio-popup-thumbnail">
+                                <div class="image">
+                                    <img class="w-100" src="Images/Projects/portfolio-01.jpg" alt="slide">
+                                </div>
+                            </div>
+                          </div>
+
+                          <div class="col-lg-6">
+                            <div class="project-text-content">
+                                <h3>
+                                    <span>Featured - Design</span> App Design Development.
+                                </h3>
+                                <p class="mb--30">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate distinctio assumenda explicabo veniam temporibus eligendi.</p>
+                                <p>Consectetur adipisicing elit. Cupiditate distinctio assumenda. dolorum alias suscipit rerum maiores aliquam earum odit, nihil culpa quas iusto hic minus!</p>
+                                <div class="button-group mt--20">
+                                    <a href="#" class="rn-btn thumbs-icon">
+                                        <span>LIKE THIS</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" 
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-up">
+                                            <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="rn-btn rn-btn-secondary">
+                                        <span>VIEW PROJECT</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg>
+                                    </a>
+                                </div>
+
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+             
+                  </div>
+                </div>
+            </div>  
+
+             <div class="project mt-5">
+
+                <div class="project-thumbnail"> 
+                    <button type="button"><img src="Images/Projects/portfolio-01.jpg" alt="Project1" class="w-100 h-100 img-fluid" data-bs-toggle="modal" data-bs-target="#projectModal"></button>
+                </div>
+
+                <div class="project-title">
+
+                    <div class="d-flex justify-content-between mt-3 mb-3 ">
+                        <div class="text-pink text-break">Development</div>
+                        <div class="like">
+                            <i class="fa-solid fa-heart fa-border-all"></i>
+                            <span>10</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#projectModal">
+                        <h3 class="text-break fs-23 fw-bold text-dark">
+                            The Service Provide For Design
+                            <span>
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </span>
+                        </h3>
+                        
+                    </a>
+
+                </div>
+            </div> 
+
+            <!-- Modal -->
+             <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header border-0">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="row">
+
+                          <div class="col-lg-6">
+                            <div class="portfolio-popup-thumbnail">
+                                <div class="image">
+                                    <img class="w-100 img-fluid" src="Images/Projects/portfolio-01.jpg " alt="slide">
+                                </div>
+                            </div>
+                          </div>
+
+                          <div class="col-lg-6">
+                            <div class="project-text-content">
+                                <h3>
+                                    <span>Featured - Design</span> App Design Development.
+                                </h3>
+                                <p class="mb--30">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate distinctio assumenda explicabo veniam temporibus eligendi.</p>
+                                <p>Consectetur adipisicing elit. Cupiditate distinctio assumenda. dolorum alias suscipit rerum maiores aliquam earum odit, nihil culpa quas iusto hic minus!</p>
+                                <div class="button-group mt--20">
+                                    <a href="#" class="rn-btn thumbs-icon">
+                                        <span>LIKE THIS</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" 
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-thumbs-up">
+                                            <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3">
+                                            </path>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="rn-btn rn-btn-secondary">
+                                        <span>VIEW PROJECT</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+                                            <polyline points="9 18 15 12 9 6"></polyline>
+                                        </svg>
+                                    </a>
+                                </div>
+
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+             
+                  </div>
+                </div>
+            </div>  
+
+        </div>
+    </div>   
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                           Projects Ends Here                            -->
+    <!-- ----------------------------------------------------------------------- -->
+
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                        Contact Me SEction Starts                        -->
+    <!-- ----------------------------------------------------------------------- -->
+    <section id="contact" class="container m-auto mt-5 pt--85 pb--85 border-bottom border-2">
+
+        <div class="text-center text-red text-break">CONTACT</div>
+        <h1 class="text-center fw-bold text-break pt-4" style="color: #3c3e41;">Get In Touch</h1>
+
+        <div class="row  pt-5">
+
+            <div class="col-lg-5 col-12 ">
+                <div class="container-fluid left-contact h-100">
+
+                    <div class="container-fluid p-0 overflow-hidden contact-thumbnail text-center">
+                        <img src="Images/Contact/contact1.png" alt="Contact Me">
+                    </div>
+
+                    <div class="container-fluid p-0 contact-text text-break">
+                        <h3 class="fw-bold">Abhishek Singh</h3>
+                        <div style="opacity: 0.8;">Full Stack Developer</div>
+                        <p>
+                            I am also available for freelance work. Connect with me via and call in to my account.
+                        </p>
+                        <div class="mb-1">
+                            Phone :
+                            <span class="contact-details">
+                               <a href="#"> +919667564570</a>
+                            </span>
+                        </div>
+                        <div>
+                            Email :
+                            <span  class="contact-details text-break">
+                               <a href="#">kirolaabhishek1234@gmail.com</a>
+                            </span>
+                        </div>
+
+                        <div>
+                            <div>
+                                <div class="social-icons-text text-dark" style="margin-left: 10px;">FIND WITH ME</div>
+                                <div class="social-icons-black"> 
+                                     <ul class="d-flex justify-content-start flex-wrap"> 
+                                        <!-- Facebook -->
+                                       <li>
+                                            <a href="#" class="button text-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="feather feather-facebook">
+                                                    <path
+                                                        d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z">
+                                                    </path>
+                                                </svg>
+                                            </a>
+                                        </li> 
+                                        <!-- Instagram -->
+                                        <li>
+                                            <a href="#" class="button text-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="feather feather-instagram">
+                                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z">
+                                                    </path>
+                                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                                </svg>
+                                            </a> 
+                                        </li> 
+                                        <!-- Linkedin -->
+                                       <li>
+                                            <a href="#" class="button text-center">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="feather feather-linkedin">
+                                                    <path
+                                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                                    </path>
+                                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                                    <circle cx="4" cy="4" r="2"></circle>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div> 
+
+             <div class="col-lg-7 col-12">
+                <div class="container-fluid right-contact h-100">
+                    <form class="row g-3" onsubmit="return validateForm()" name="contactForm" 
+                    action="action1.php" method="post">
+                        <div class="col-md-6">
+                            <label for="YourName" class="form-label text-uppercase">Your Name</label>
+                            <input type="text" class="form-control" name="YourName">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="mobile" class="form-label text-uppercase">Phone Number</label>
+                            <input type="text" class="form-control" name="mobile">
+                        </div>
+                        <div class="col-12">
+                            <label for="email" class="form-label text-uppercase">Email</label>
+                            <input type="email" class="form-control" name="email">
+                        </div>
+                        <div class="col-12">
+                            <label for="subject" class="form-label text-uppercase">Subject</label>
+                            <input type="text" class="form-control" name="subject">
+                        </div>
+                        <div class="col-12">
+                            <label for="message" class="form-label text-uppercase">Your Message</label>
+                            <textarea name="message" class="form-control" cols="30" rows="10"></textarea>
+                        </div>
+                        <button type="submit" class=" button contact-button border-0 text-uppercase mt-5">Send Message <i
+                        class="fa-solid fa-arrow-right"></i> </button>
+                            
+                        <div id="error-box">
+                            <div id="nameErr"></div>
+                            <div id="mobileErr"></div>
+                            <div id="emailErr"></div>
+                            <div id="messageErr"></div>
+                        </div>
+
+                    </form>
+                </div>
+            </div> 
+
+        </div>
+
+    </section>
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                           Contact Me Ends Here                           -->
+    <!-- ----------------------------------------------------------------------- -->
+
+
+    <footer class="text-center pb-5 mt-5">
+        &copy; 2022. Made with love by <a href="#">Abhishek Singh</a>
+    </footer>
+
+
+     <script>
+
+        function printError(elemId,hintMsg) {
+            document.getElementById(elemId).innerHTML = hintMsg;
+            document.getElementById("error-box").style.background = "#ff00031f";
+        };
+
+        function validateForm() {
+            var YourName = document.contactForm.YourName.value;
+            var mobile = document.contactForm.mobile.value;
+            var email = document.contactForm.email.value;
+            var subject = document.contactForm.subject.value;
+            var message = document.contactForm.message.value;
+
+            var nameErr = mobileErr = emailErr = messageErr = true;
+
+            if (YourName == "") {
+                printError("nameErr", "*Please enter your name");
+            } else {
+                var regex = /^[a-zA-Z\s]+$/;
+                if (regex.test(YourName) === false) {
+                    printError("nameErr", "*Please enter a valid name");
+                } else {
+                    printError("nameErr", "");
+                    nameErr = false;
+                }
+            }
+
+            if (mobile == "") {
+                printError("mobileErr", "*Please enter your mobile number");
+            } else {
+                var regex = /^[1-9]\d{9}$/;
+                if (regex.test(mobile) === false) {
+                    printError("mobileErr", "*Please enter a valid 10 digit mobile number");
+                } else {
+                    printError("mobileErr", " ");
+                    mobileErr = false;
+                }
+            }
+
+            if (email == "") {
+                printError("emailErr", "*Please enter your email address");
+            } else {
+                // Regular expression for basic email validation
+                var regex = /^\S+@\S+\.\S+$/;
+                if (regex.test(email) === false) {
+                    printError("emailErr", "*Please enter a valid email address");
+                } else {
+                    printError("emailErr", "");
+                    emailErr = false;
+                }
+            }
+
+            if (message == "") {
+                printError("messageErr", "*Message cannot be empty");
+            } else {
+                var regex = /^[a-zA-Z\s]+$/;
+                if (regex.test(YourName) === false) {
+                    printError("messageErr", "*Please enter a valid message");
+                } else {
+                    printError("messageErr", "");
+                    messageErr = false;
+                }
+            }
+
+            if ((nameErr || mobileErr || emailErr || messageErr ) == true) {
+                return false;
+            } 
+        };
+
+    </script> 
+
+
+    <!-- ------------------------ Bootstrap Javascript ------------------------- -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- --------------------------- Main Javascript --------------------------- -->
+    <script src="main.js"></script>
+
+</body>
+
+</html>
