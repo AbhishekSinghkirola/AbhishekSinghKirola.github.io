@@ -1,0 +1,165 @@
+@media only screen and (min-width: 401px) and (max-width: 1250px) {
+  nav {
+    padding: 0 19px;
+  }
+}
+
+@media only screen and (min-width: 402px) and (max-width: 1249px) {
+  /* ------------------------------ Hero Section ------------------------------ */
+  #container {
+    max-width: 1200px !important;
+  }
+  .wrap-image {
+    width: auto;
+  }
+
+  .pl-110 {
+    padding-left: 0;
+  }
+
+  .mtop-103 {
+    margin-top: -27px;
+  }
+
+  .social-icons-black ul {
+    padding: 0;
+  }
+
+  .hero-skill-icons ul {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 1251px) and (max-width: 1399px) {
+  .pl-110 {
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  #hero-image {
+    padding: 0;
+    height: max-content;
+  }
+
+  .wrap-image {
+    max-height: 412px;
+  }
+}
+@media only screen and (min-width: 424px) and (max-width: 749px) {
+  .social-icons-black ul {
+    justify-content: space-evenly !important;
+  }
+
+  .hero-skill-icons ul {
+    justify-content: space-evenly !important;
+  }
+
+  .ml-24 {
+    margin-left: 55px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .name {
+    font-size: 32px;
+  }
+
+  .welcome {
+    font-size: 14px;
+  }
+
+  .wrapper .static-txt {
+    font-size: 26px;
+  }
+
+  .dynamic-txts li {
+    font-size: 26px;
+  }
+
+  .hero-data-text {
+    font-size: 1rem;
+  }
+
+  .ptop-81 {
+    padding-top: 48px;
+  }
+
+  .pl-48 {
+    padding-left: 0;
+  }
+
+  /* ------------------------------ About Section ----------------------------- */
+  .about {
+    font-size: 32px;
+  }
+
+  #read-more {
+    display: block !important;
+  }
+
+  .show1 {
+    display: none;
+  }
+
+  .thumbnail .img img {
+    height: 248px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  nav {
+    padding: 0 10px;
+  }
+
+  /* ------------------------------ Hero Section ------------------------------ */
+  .wrap-image {
+    width: auto;
+  }
+
+  .pl-110 {
+    padding-left: 0;
+  }
+
+  .mtop-103 {
+    margin-top: -27px;
+  }
+
+  #hero-image {
+    padding: 0;
+    height: max-content;
+  }
+
+  .wrap-image {
+    max-height: 311px;
+  }
+
+  .project {
+    width: 285px;
+    height: auto;
+  }
+
+  .project-thumbnail {
+    width: 228px;
+    height: auto;
+  }
+
+  .modal-content {
+    padding: 0;
+  }
+
+  .button-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rn-btn {
+    position: static;
+  }
+
+  .service-box {
+    width: 290px;
+    height: max-content;
+  }
+  
+}
